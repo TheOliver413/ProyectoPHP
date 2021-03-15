@@ -1,0 +1,146 @@
+body{
+    background-image: url("../imagenes/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen img{
+    margin-top: 15px;
+    width:200px;
+    height: 150px;
+    margin-left: 50px;
+}
+.principal{
+
+    display: inline;
+}
+
+.formulario{
+    margin-top: -160px;
+    margin-bottom: 0px;
+    transform : translate(-30%,30%);
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.form__titulo {
+    font-family: sans-serif;
+    background-color: #165253; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 3px solid  white;
+}
+
+.contendor-inputs {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid darkgray;
+}
+
+.input-48 {
+    width: 48%;
+    
+}
+
+.input-100 {
+    width: 100%;
+}
+
+.btn-enviar {
+    background: #165253;
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-enviar:hover {
+    transition: 1s;
+    background: #307c7d;
+}
+
+.form__link {
+    width: 100%;
+    margin: 7px;
+    text-align: center;
+    font-size: 14px;
+}
+
+fieldset{
+    border: none;
+    margin-bottom: 40px;
+}
+
+.cardsf {
+    padding: 40px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cardsf .cardf {
+    text-align: center;
+    background: #4d0686;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.cardsf .cardf>.texto-cardsf {
+    width: 60%;
+    color: #fff;
+}
+
+.cardsf .cardf>.texto-cardsf p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.cardsf .cardf>.texto-cardsf a {
+    font-weight: 300;
+    padding-top: 5px;
+    color: #fff;
+    text-decoration: none;
+}

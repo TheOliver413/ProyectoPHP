@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo2.png">
+  <script src="https://kit.fontawesome.com/9793ebb1a8.js" crossorigin="anonymous"></script>
+  <title>Menu</title>
+</head>
+
+<body>
+  <header class="texto">
+    <nav>
+      <ul>
+        <li><a href="menu.jsp"><img src="imagenes/logo.png" alt=""></a></li>
+      </ul>
+    </nav>
+  </header>
+  <%
+  HttpSession us=request.getSession();
+  String nom=(String)us.getAttribute("nombre");
+  String ap=(String)us.getAttribute("apellido");
+  String rol=(String)us.getAttribute("rol");
+  String tel=(String)us.getAttribute("telefono");
+  %>
+  <section class="principal">
+
+    <div class="informacion1">
+
+      <img src="imagenes/usuario.png" alt="">
+      <form action="ServletCerrar">
+        <h1><%=rol%></h1>
+        <h2>Nombre : <spam><%=nom%></spam></h2>
+        <h2>Apellido :<spam><%=ap%></spam></h2>
+        <h2>Telefono :<spam><%=tel%></h2>
+        <h2>Cargo :<spam><%=car%></spam></h2>
+        <input type="submit" class="boton" value="Cerrar Sesion" name="btncerrar">
+      </form>
+    </div>
+
+    <section class="separar">
+
+      
+
+      <div class="contenedores">
+        <section class="Nosotros" id="preguntas">
+          <div class="container4">
+
+            <div class="is">
+              <div class="cardBox">
+                <a href="Certificados.jsp">
+                  <div class="cardbox2">
+                    <div class="card-texto">
+                      <i class="fas fa-print"></i>
+                      <h3>Certificados</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cen">
+              <div class="cardBox">
+                <a href="Personal.jsp">
+                  <div class="cardbox2">
+                    <div class="card-texto">
+                      <i class="fas fa-user-friends"></i>
+                      <h3>Personal </h3>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="de">
+              <div class="cardBox">
+                <a href="Nomina.jsp">
+                  <div class="cardbox2">
+                    <div class="card-texto">
+                      <i class="fas fa-money-bill-alt"></i>
+                      <h3> Nomina</h3>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+          <div class="container5">
+
+            <div class="is">
+              <div class="cardBox">
+                <a href="Insumos.jsp">
+                  <div class="cardbox2">
+                    <div class="card-texto">
+                      <i class="fas fa-parachute-box"></i>
+                      <h3>I. Insumos</h3>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cen">
+              <div class="cardBox">
+                <a href="MateriasPrimas.jsp">
+                  <div class="cardbox2">
+                    <div class="card-texto">
+                      <i class="fas fa-hand-holding-water"></i>
+                      <h3>I. Materias P.</h3>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="de">
+              <div class="cardBox">
+                <a href="Laboratorio.jsp">
+                  <div class="cardbox2">
+                    <div class="card-texto">
+                      <i class="fas fa-atom"></i>
+                      <h3>I. Laboratorio</h3>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="container5">
+
+
+
+            <div class="cen">
+              <div class="cardBox">
+                <a href="Herramientas.jsp">
+                  <div class="cardbox3">
+                    <div class="card-texto">
+                      <i class="fas fa-tools"></i>
+                      <h3> I. Herramientas</h3>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+        </section>
+      </div>
+    </section>
+
+
+  </section>
+
+</body>
+
+</html>
