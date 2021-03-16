@@ -1,7 +1,7 @@
 <?php
     $dbhost="localhost";
     $dbuser="root";
-    $dbpass="staxx";
+    $dbpass="";
     $dbname="ingeambiental";
 
     $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
