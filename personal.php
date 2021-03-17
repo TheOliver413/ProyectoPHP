@@ -1,31 +1,26 @@
 <?php
-require 'conexiontablas.php';
+insertado($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['telefono'],
+$_POST['direccion'], $_POST['cargo'],$_POST['tipodecontrato'], $_POST['rol'], $_POST['cuentabancaria'],
+$_POST['contraseña'], $img = $_POST['img']);
 
-$cedula = $_POST['cedula'];
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$telefono = $_POST['telefono'];
-$direccion = $_POST['direccion'];
-$cargo = $_POST['cargo'];
-$tipodecontrato = $_POST['tipodecontrato'];
-$rol = $_POST['rol'];
-$cuentabancaria = $_POST['cuentabancaria'];
-$contraseña = $_POST['contraseña'];
-$img = $_POST['img'];
+function insertado($cedula,$nombre,$apellido,$telefono,$direccion,$cargo,$tipodecontrato,$rol,$cuentabancaria,$contraseña,
+$img)
+{
 
-$insertar = "INSERT INTO personal VALUES ('$cedula','$nombre','$apellido','$telefono','$direccion','$cargo,'$tipodecontrato','$rol',
-'$cuentabancaria','$contraseña','$img');";
-
-$resultado = mysqli_query($conn,$insertar);
-
-if($resultado){
-    echo "<script> alert('Datos insertados'); 
-            location.href = 'personal.html'; 
-          </script>";
+include('conexiontablas.php');    
+ $con = New Conexion();
+$sentencia="INSERT INTO personal VALUES ('".$cedula."','".$nombre."','".$apellido."','".$telefono."',
+'".$direccion."','".$cargo."','".$tipodecontrato."','".$rol."','".$cuentabancaria."','".$contraseña."',
+'".$img."')";
+$resultado=$con->query($sentencia) or die("Error de datos".mysqli_error($con));
 }
-else{
-    echo "<script> alert('Datos no insertados'); 
-            location.href = 'personal.html'; 
-        </script>";
-}
+
+?>
+
+<script type="text/javascript">
+
+alert("Se inserto el registro correctamente");
+window.location.href='Personal.html'; 
+
+</script>
 ?>
