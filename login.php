@@ -1,12 +1,12 @@
 <?php
     $dbhost="localhost";
     $dbuser="root";
-    $dbpass="staxx";
+    $dbpass="";
     $dbname="ingeambiental";
 
     $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
     if(!$conn){
-        die("No hay conexion: ".mysqli_connect_error());
+       die("No hay conexion: ".mysqli_connect_error());
     }
     $nombre=$_POST["email"];
     $pass=$_POST["pass"];
@@ -15,8 +15,8 @@
     $nr=mysqli_num_rows($query);
 
     if($nr == 1){
-        header("Location: ../menu.html");
+        header("Location: menu.html");
     }else if($nr != 1){
         echo("Datos Erroneos");
-    }   
+    }  
 ?>

@@ -1,23 +1,11 @@
-<%@page import="Modelo.Certificados"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="Modelo.Personal"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="java.sql.Connection"%>
-<%@page import="Conexion.Conexion"%>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/formularios.css">
-
-    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo2.png">
-
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo2.png">
     <script src="https://kit.fontawesome.com/9793ebb1a8.js" crossorigin="anonymous"></script>
-
-
     <title>Insumos</title>
 </head>
 
@@ -25,47 +13,37 @@
     <header class="texto">
         <nav>
             <ul>
-                <li><a href="menu.j"><img src="imagenes/logo.png" alt=""></a></li>
+                <li><a href="menu.html"><img src="img/logo.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
-    <%
-    HttpSession us=request.getSession();
-    String nom=(String)us.getAttribute("nombre");
-    String ap=(String)us.getAttribute("apellido");
-    String rol=(String)us.getAttribute("rol");
-    String tel=(String)us.getAttribute("telefono");
-    %>
-
+ 
     <section class="principal">
-
         <div class="informacion1">
-
-            <img src="imagenes/usuario.png" alt="">
+            <img src="img/usuario.png" alt="">
             <form action="ServletCerrar">
-                <h1><%=rol%></h1>
-                <h2>Nombre : <spam><%=nom%></spam></h2>
-                <h2>Apellido :<spam><%=ap%></spam></h2>
-                <h2>Telefono :<spam><%=tel%></h2>
-                <h2>Cargo :<spam><%=car%></spam></h2>
+                <h1></h1>
+                <h2>Nombre: </h2>
+                <h2>Apellido:</h2>
+                <h2>Telefono:</h2>
+                <h2>Cargo:</h2>
                 <input type="submit" class="boton" value="Cerrar Sesion" name="btncerrar">
             </form>
         </div>
 
         <section class="separar">
 
-            <form>
+            <form action="insumos.php" method="POST">
                 <h2 class="form__titulo">Insumos</h2>
                 <div class="contendor-inputs">
                     <input type="number" id="codigo" name="codigo" placeholder="Codigo" class="input-48" required>
-                    <input type="number" id="unidades" name="unidades" placeholder="Unidades" class="input-48" required>
-                    <input type="number" id="cedula" name="cedula" placeholder="Cedula." class="input-100" required>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre P." class="input-100" required>
-                    <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" class="input-100"
+                    <input type="number" id="cedula" name="cedula" placeholder="Cedula." class="input-48" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre P." class="input-48" required>
+                    <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" class="input-48"
                         required>
-
+                    <input type="number" id="unidades" name="unidades" placeholder="Unidades" class="input-48" required>
                     <input type="number" id="precio" name="precio" placeholder="Precio" class="input-48" required>
-                    <input type="number" id="total" name="total" placeholder="Total" class="input-48" required>
+                    <input type="number" id="total" name="total" placeholder="Total" class="input-100" required>
 
                     <input type="submit" value="Enviar" class="btn-enviar" class="input-100">
                 </div>

@@ -17,31 +17,23 @@
       </ul>
     </nav>
   </header>
-  <%
-  HttpSession us=request.getSession();
-  String nom=(String)us.getAttribute("nombre");
-  String ap=(String)us.getAttribute("apellido");
-  String rol=(String)us.getAttribute("rol");
-  String tel=(String)us.getAttribute("telefono");
-  %>
+
   <section class="principal">
 
     <div class="informacion1">
 
       <img src="imagenes/usuario.png" alt="">
       <form action="ServletCerrar">
-        <h1><%=rol%></h1>
-        <h2>Nombre : <spam><%=nom%></spam></h2>
-        <h2>Apellido :<spam><%=ap%></spam></h2>
-        <h2>Telefono :<spam><%=tel%></h2>
-        <h2>Cargo :<spam><%=car%></spam></h2>
+        <h1></h1>
+        <h2>Nombre:</h2>
+        <h2>Apellido:</h2>
+        <h2>Telefono:</h2>
+        <h2>Cargo:</h2>
         <input type="submit" class="boton" value="Cerrar Sesion" name="btncerrar">
       </form>
     </div>
 
     <section class="separar">
-
-      
 
       <div class="contenedores">
         <section class="Nosotros" id="preguntas">
@@ -49,7 +41,7 @@
 
             <div class="is">
               <div class="cardBox">
-                <a href="Certificados.jsp">
+                <a href="Certificados.html">
                   <div class="cardbox2">
                     <div class="card-texto">
                       <i class="fas fa-print"></i>
@@ -62,7 +54,7 @@
 
             <div class="cen">
               <div class="cardBox">
-                <a href="Personal.jsp">
+                <a href="Personal.html">
                   <div class="cardbox2">
                     <div class="card-texto">
                       <i class="fas fa-user-friends"></i>
@@ -76,7 +68,7 @@
 
             <div class="de">
               <div class="cardBox">
-                <a href="Nomina.jsp">
+                <a href="Nomina.html">
                   <div class="cardbox2">
                     <div class="card-texto">
                       <i class="fas fa-money-bill-alt"></i>
@@ -97,7 +89,7 @@
 
             <div class="is">
               <div class="cardBox">
-                <a href="Insumos.jsp">
+                <a href="Insumos.html">
                   <div class="cardbox2">
                     <div class="card-texto">
                       <i class="fas fa-parachute-box"></i>
@@ -111,7 +103,7 @@
 
             <div class="cen">
               <div class="cardBox">
-                <a href="MateriasPrimas.jsp">
+                <a href="MateriasPrimas.html">
                   <div class="cardbox2">
                     <div class="card-texto">
                       <i class="fas fa-hand-holding-water"></i>
@@ -125,7 +117,7 @@
 
             <div class="de">
               <div class="cardBox">
-                <a href="Laboratorio.jsp">
+                <a href="Laboratorio.html">
                   <div class="cardbox2">
                     <div class="card-texto">
                       <i class="fas fa-atom"></i>
@@ -145,7 +137,7 @@
 
             <div class="cen">
               <div class="cardBox">
-                <a href="Herramientas.jsp">
+                <a href="Herramientas.html">
                   <div class="cardbox3">
                     <div class="card-texto">
                       <i class="fas fa-tools"></i>
