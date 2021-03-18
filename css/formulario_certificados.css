@@ -8,7 +8,9 @@
 
 
 form {
-    width: 78%;
+    
+    width: 75%;
+ 
     margin: auto;
     padding: 10px 20px;
     margin-top: 0;
@@ -31,6 +33,7 @@ form {
 }
 
 .contendor-inputs {
+    
     padding: 20px 30px;
     display: flex;
     flex-wrap: wrap;
@@ -40,51 +43,42 @@ form {
     border-radius: 0 0 20px 20px;
 }
 
-input {
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 16px;
+.custom-input-file {
+    background-color:#165253;
+    color: #fff;
+    border: 1px solid #307c7d;
     border-radius: 7px;
-    background-color: white;
-    border: 1px solid darkgray;
-}
-select {
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 7px;
-    background-color: white;
-    border: 1px solid darkgray;
-}
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    padding: 8px;
+    text-align: left;
+    width: 1px;
+    
+  }
+  
+  .custom-input-file .input-file {
+   border: 10000px solid transparent;
+   cursor: pointer;
+   font-size: 1px;
+   margin: 0;
+   opacity: 0;
+   outline: 0 none;
+   padding: 0;
+   position: absolute;
+   right: -1000px;
+   top: -1000px;
+  }
 
-.input-48 {
-    width: 47%;
-    height: 51px;
-    margin-bottom: 1%;
-}
 
-.input-100 {
-    width: 47%;
-    margin-bottom: 1%;
-    margin-left: 0%;
-}
-
-.file{
-    width: 47%;
-    margin-right:40%;
-}
-
-label{
-    font-size: 25px;
-    color:white;
-}
-
-.btn-enviar {
+  .btn-enviar {
 
     background: #165253;
     color: #fff;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 0%;
     margin-left: 24%;
     width: 50%;
     padding: 10px 40px;
@@ -119,6 +113,28 @@ label{
    color:black;
    font-size: 100px;
 }
+
+
+
+.actualizar{
+    margin-left: 89%;
+    border: none;
+   
+}
+
+.fas{
+    font-size: 35px;
+    color:white;
+} 
+
+button{
+    background: none;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    border: none;
+}
+
 table{
     margin-top: 3%;
     width: 90%;
@@ -193,65 +209,3 @@ tbody tr:nth-child(odd) {
     background-color: #165253;
     color:white;
   }
-
-
-
-.actualizar{
-    margin-left: 89%;
-    border: none;
-   
-}
-
-.fas{
-    font-size: 35px;
-    color:white;
-} 
-
-button{
-    background: none;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
-    border: none;
-}
-
-
-.botones{
-    display: flex;
-    background-color: white;
-    margin-top: 1%;
-    padding-left: 60%;
-   
-}
-
-.entrada{
-    display: flex;
-    background-color:  #165253;
-    border-radius: 10px;
-    width: 32%;
-    padding: 15px;
-    color: white;
-    
-}
-.entrada:hover{
-    transition: 0.2s;
-    background: #307c7d;
-color:white;
-text-decoration:none;
-}
-.salida{
-    display:flex ;
-    background-color:  #165253;
-    border-radius: 10px;
-    width: 30%;
-    padding: 15px;
-    color: white;
-    margin-left: 50px;
-    margin-right:80px;
-}
-.salida:hover{
-    transition: 0.2s;
-    background: #307c7d;
-    color:white;
-text-decoration:none;
-}

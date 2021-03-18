@@ -8,7 +8,9 @@
 
 
 form {
-    width: 78%;
+    
+    width: 75%;
+ 
     margin: auto;
     padding: 10px 20px;
     margin-top: 0;
@@ -31,6 +33,7 @@ form {
 }
 
 .contendor-inputs {
+    
     padding: 20px 30px;
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +44,7 @@ form {
 }
 
 input {
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     padding: 10px;
     font-size: 16px;
     border-radius: 7px;
@@ -60,31 +63,27 @@ select {
 .input-48 {
     width: 47%;
     height: 51px;
-    margin-bottom: 1%;
+    margin-bottom: 3px;
 }
 
 .input-100 {
     width: 47%;
-    margin-bottom: 1%;
+    margin-bottom: 1px;
     margin-left: 0%;
 }
 
 .file{
     width: 47%;
-    margin-right:40%;
+    margin-left: 25%;
 }
 
-label{
-    font-size: 25px;
-    color:white;
-}
 
 .btn-enviar {
 
     background: #165253;
     color: #fff;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 1%;
     margin-left: 24%;
     width: 50%;
     padding: 10px 40px;
@@ -119,6 +118,28 @@ label{
    color:black;
    font-size: 100px;
 }
+
+
+
+.actualizar{
+    margin-left: 89%;
+    border: none;
+   
+}
+
+.fas{
+    font-size: 35px;
+    color:white;
+} 
+
+button{
+    background: none;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    border: none;
+}
+
 table{
     margin-top: 3%;
     width: 90%;
@@ -193,65 +214,3 @@ tbody tr:nth-child(odd) {
     background-color: #165253;
     color:white;
   }
-
-
-
-.actualizar{
-    margin-left: 89%;
-    border: none;
-   
-}
-
-.fas{
-    font-size: 35px;
-    color:white;
-} 
-
-button{
-    background: none;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
-    border: none;
-}
-
-
-.botones{
-    display: flex;
-    background-color: white;
-    margin-top: 1%;
-    padding-left: 60%;
-   
-}
-
-.entrada{
-    display: flex;
-    background-color:  #165253;
-    border-radius: 10px;
-    width: 32%;
-    padding: 15px;
-    color: white;
-    
-}
-.entrada:hover{
-    transition: 0.2s;
-    background: #307c7d;
-color:white;
-text-decoration:none;
-}
-.salida{
-    display:flex ;
-    background-color:  #165253;
-    border-radius: 10px;
-    width: 30%;
-    padding: 15px;
-    color: white;
-    margin-left: 50px;
-    margin-right:80px;
-}
-.salida:hover{
-    transition: 0.2s;
-    background: #307c7d;
-    color:white;
-text-decoration:none;
-}
