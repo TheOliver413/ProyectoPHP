@@ -22,5 +22,7 @@ $resultado=$con->query($sentencia) or die("Error de datos".mysqli_error($con));
 alert("Se inserto el registro correctamente");
 window.location.href='Personal.html'; 
 
+
+
 </script>
 ?>
