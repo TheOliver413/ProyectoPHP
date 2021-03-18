@@ -54,14 +54,12 @@
     <div class="carousel-inner">              
            <div class="carousel-item active">
    
-            <form action="herramientas.php" method="POST" >
+           <form action="herramientas.php" method="POST" >
                 <h2 class="form__titulo">Herramientas</h2>
                 <div class="contendor-inputs">
-
-                <input type="hidden" id="num" name="num" placeholder="num" class="input-48" required>
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre De Herramienta" class="input-48" required>
                     <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" class="input-48" required>
-                    <input type="number" id="unidades" name="unidades" placeholder="unidades" class="input-48" required>
+                    <input type="number" id="unidades" name="unidades" placeholder="unidades" class="input-100" required>
                     <input type="number" id="precio" name="precio" placeholder="Precio" class="input-100" required>
                     <input type="submit" name="btninsert" value="Enviar" class="btn-enviar" class="input-100">
                 </div>
@@ -121,7 +119,7 @@
            
        </div>
        <div class="botones">
-       <a class="entrada"href="HerramientasPDF.php" class="btn btn-success"><i class="fas fa-file-pdf"></i>PDF</a>
+       <a class="entrada"href="GraficaInLab.php" class="btn btn-success"><i class="fas fa-file-pdf"></i>PDF</a>
        <a class="entrada"href="Entradasysalidas/Entrada_Herramientas.php" class="btn btn-success"><i class="fas fa-door-closed"></i>Entradas</a>
         <a class="salida"href="Entradasysalidas/Salida_Herramientas.php" class="btn btn-success"><i class="fas fa-door-open"></i>Salidas</a>
       

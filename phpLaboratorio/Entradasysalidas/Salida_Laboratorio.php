@@ -121,6 +121,7 @@
            
        </div>
        <div class="botones">
+        <a class="entrada"href="GraficaInSaLab.php" class="btn btn-success"><i class="fas fa-file-pdf"></i>PDF</a>
         <a class="entrada"href="../Tabla_Laboratorio.php" class="btn btn-success"><i class="fas fa-archive"></i></i>Inventario</a>
         <a class="salida"href="Entrada_Laboratorio.php" class="btn btn-success"><i class="fas fa-door-closed"></i>Entradas</a>
       

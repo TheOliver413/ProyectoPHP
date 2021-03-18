@@ -1,12 +1,11 @@
 <?php
-insertado($_POST['num'],$_POST['nombre'],$_POST['descripcion'],$_POST['unidades'],$_POST['precio']);
+insertado($_POST['nombre'],$_POST['descripcion'],$_POST['unidades'],$_POST['precio']);
 
-function insertado($num,$nombre,$descripcion,$unidades,$precio)
+function insertado($nombre,$descripcion,$unidades,$unipreciodades)
 {
 include('conexiontablas.php');    
  $con = New Conexion();
-$sentencia="INSERT INTO herramientas VALUES ('".$num."','".$nombre."','".$descripcion."',
-'".$unidades."','".$precio."')";
+$sentencia="INSERT INTO herramientas VALUES(null,'".$nombre."','".$descripcion."', '".$unidades."','".$unipreciodades."', 0, 0,0)";
 $resultado=$con->query($sentencia) or die("Error de datos".mysqli_error($con));
 }
 

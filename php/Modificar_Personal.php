@@ -102,8 +102,8 @@ function ConsultarPersonal($Cedula)
                            <option>Empleado</option>
                            <option>Administrador</option>
                        </select>
-                       <input type="number" id="cuentabancaria" name="cuentabancaria" placeholder="N° cuenta bancaria"class="input-100" value="<?php echo $consulta[8] ?>" required>
-                       <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" class="input-48" value="<?php echo $consulta[9] ?>"required>
+                       <input type="number" id="cuentabancaria" name="cuentabancaria" placeholder="N° cuenta bancaria"class="input-48" value="<?php echo $consulta[8] ?>" required>
+                       <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" class="input-100" value="<?php echo $consulta[9] ?>"required>
                        <label>Foto Empleado:</label>
                        <input type="file" required class="file" name="img" value="<?php echo $consulta[10] ?>">
    

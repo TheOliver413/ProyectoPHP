@@ -135,6 +135,7 @@
         <a class="salida"href="Entradasysalidas/Salida_Laboratorio.php" class="btn btn-success"><i class="fas fa-door-open"></i>Salidas</a>
       </div>
       
+      
 
        <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
         <span  aria-hidden="true"></span>

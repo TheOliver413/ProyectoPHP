@@ -54,6 +54,7 @@
 <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
     <div class="carousel-inner">              
            <div class="carousel-item active">
+             
             <form action="ServletCertificados">
                 <h2 class="form__titulo">Materias Primas</h2>
                 <div class="contendor-inputs">
